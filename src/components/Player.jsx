@@ -119,7 +119,7 @@ const Player = () => {
       nextTrackHandler();
     };
     audioRef.current.addEventListener('ended', handleEnded);
-  }, [currentTrackIndex]);
+  }, [audioRef.current]);
 
   // Update total time when the audio is loaded
   useEffect(() => {
